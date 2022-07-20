@@ -72,41 +72,37 @@ a.\.btn:after {
     border: -11px solid blue;
     z-index: -1;
 }
-a.\.btn:hover a.\.btn:after {
-    width: 100%;
-}
 
-
-a.\.btn:hover i.fa-solid.fa-angle-right.btn-angel {
+a.\.btn i.fa-solid.fa-angle-right.btn-angel {
     transition: 2s;
     /* animation: btnAngel 3s linear 1s infinite left forwards running; */
     animation-name: angelBtn;
     animation-duration: 3s;
-    animation-timing-function: linear;
+    animation-timing-function:linear;
     animation-delay: 1s;
     animation-iteration-count: infinite;
-    animation-direction: initial;
+    animation-direction:alternate-reverse;
     animation-fill-mode: forwards;
     animation-play-state: running;
     transition: 3s;
 }
 @keyframes angelBtn {
     0%{
-        transform: rotate(360deg);
+        transform: translate(20px)  rotate(180deg);
+        /* transform: rotate(360deg); */
+        /* background-color: blue; */
+    }
+    5%{
+       transform: translate(15px)  rotate(180deg); 
+    }
+    50%{
+        transform: translate(10px) rotate(0deg);
     }
     100%{
-        transform: rotate(0deg);
+        transform: translate(00px);
+
     }
 }
-
-
-
-
-
-
-
-
-
 
 
 /* ================
@@ -202,7 +198,7 @@ a.\.btn:hover i.fa-solid.fa-angle-right.btn-angel {
     width: 100%;
 }
 article.single-blog-live img {
-    width: 291px;
+    width: 100%;
     height: 175px;
 }
 /* .upcoming-blog ul li:active,
@@ -218,16 +214,16 @@ a.transfer {
     margin: 1em 0;
 }
 
-.blog-livecust-area{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 1em;
-    grid-row-gap: 1em;
-}
+ .blog-livecust-area{
+   display: flex;
+   justify-content: space-between;
+} 
 .upcoming-blog{
-    grid-area: "u";
+    width: 30%;
+    height: 100vh;
 }
 .blog-live-items{
+    width: 68%;
     grid-area: "l";
 }
 .blog-live-items {
