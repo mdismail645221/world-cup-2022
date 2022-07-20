@@ -153,6 +153,36 @@ a.\.btn i.fa-solid.fa-angle-right.btn-angel {
 }
 
 
+/* ============================
+    upcoming matches area
+========================== */
+.country-matchs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.country-matchs img {
+    width: 94px;
+    height: 55px;
+}
+
+.upcoming-live-info {
+    text-align: center;
+    padding: 1em 0;
+}
+
+article.single-upcoming-live {
+    border: 1px solid #ddd;
+    padding: 1em 1em;
+    border-radius: 10px;
+    box-shadow: 3px 3px 30px #eee;
+}
+/* ============================
+   / upcoming matches area
+========================== */
+
+
 /*=========================== blog-livecust-area style======================= */
 
 
@@ -262,6 +292,12 @@ article.single-blog-live {
 .single-blog-icons p span {
     margin-left: 3px;
     color: rgba(22, 22, 22, 0.7);
+}
+.view-all-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4em;
 }
 
 /* ===================
