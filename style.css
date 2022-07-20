@@ -108,42 +108,35 @@ a.\.btn i.fa-solid.fa-angle-right.btn-angel {
 /* ================
     header-area
 ======================*/
-
-.header-logo {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
 .header-top-area {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 5%;
 }
 
 .header-title {
-    flex-basis: 50%;
+    flex-basis: 55%;
 }
 .header-title {
     padding: 2em;
 }
 
 .header-logo {
-    flex-basis: 45%;
+    flex-basis: 40%;
 }
-/* .header-logo img {
+.header-logo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: left;
-} */
+}
 .header-top-area {
     background: var(--bg-color);
     color: #fff;
     border-radius: 10px;
-    padding: 0 6em;
+    /* padding: 1em; */
     margin: 2em 0;
-    position: relative;
 }
 .header-title h1 {
     font-size: 4.375rem;
@@ -156,14 +149,9 @@ a.\.btn i.fa-solid.fa-angle-right.btn-angel {
     font-weight: 400;
     font-size: 1rem;
     line-height: 26px;
-    padding:2em 0; 
-    padding-bottom: 3em;
+    padding:1em 0; 
 }
 
-.header-logo img {
-    width: 500px;
-    height:fit-content;
-}
 
 /* ============================
     upcoming matches area
@@ -190,10 +178,12 @@ article.single-upcoming-live {
     border-radius: 10px;
     box-shadow: 3px 3px 30px #eee;
 }
+/* ============================
+   / upcoming matches area
+========================== */
 
-/*=========================== 
-    blog-livecust-area style
-======================= */
+
+/*=========================== blog-livecust-area style======================= */
 
 
 .upcoming-blog {
@@ -246,6 +236,11 @@ article.single-blog-live img {
     width: 100%;
     height: 175px;
 }
+/* .upcoming-blog ul li:active,
+.upcoming-blog ul li:visited,
+.upcoming-blog ul li:focus {
+    background: red;
+} */
 a.transfer {
     border: 2px solid rgba(22, 22, 22, 1);
     padding: .3em 1em;
@@ -264,6 +259,7 @@ a.transfer {
 }
 .blog-live-items{
     width: 68%;
+    grid-area: "l";
 }
 .blog-live-items {
     display: grid;
@@ -304,7 +300,9 @@ article.single-blog-live {
     margin: 4em;
     display: none;
 }
-
+/* .view-all-btn a.\.btn {
+    display: none;
+} */
 /* ===================
     footer style
 =======================*/
@@ -407,19 +405,7 @@ hr{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 760px) {
-
-    /* ---------------header------------- */
-    
-
-    .header-logo img {
-        width: 100%;
-        height:400px;
-    }
-    .header-logo {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-    }
+    /* header */
     .header-top-area {
         display: flex;
         flex-direction: column;
@@ -431,24 +417,10 @@ hr{
         text-align: center;
     }
     .header-title h1 {
-        font-size: 1.5rem;
-        line-height: 40px;
+        font-size: 22px;
+        line-height: 32px;
         font-weight: 700;
         font-family: 'Poppins';
-    }
-    
-    .header-logo {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-    }
-
-    /* ===========================
-            upcoming blog live 
-     ============================*/
-
-    article.single-upcoming-live {
-        width: 100%;
     }
 
     /* blog-livecust-area */
@@ -473,7 +445,9 @@ hr{
         grid-gap: 1em;
         grid-template-rows: repeat(9 1fr);
         margin: 2em 0;
+        justify-items: flex-end;
         margin: 2em auto;
+        /* justify-content: flex-end; */
     }
     article.single-blog-live {
         border: 2px solid #ddd;
@@ -508,12 +482,7 @@ hr{
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width:992px) {
      /* header */
-    .header-logo {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-    }
-    .header-top-area {
+    /* .header-top-area {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -522,7 +491,7 @@ hr{
     }
     .header-title {
         text-align: center;
-    } 
+    } */
     .header-title h1 {
         font-size: 2em;
         line-height: 42px;
@@ -546,7 +515,7 @@ hr{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 1em;
+            margin-top: 1em;
     } 
     .upcoming-blog ul li {
        height: 3em;
