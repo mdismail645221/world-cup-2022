@@ -123,13 +123,14 @@ a.\.btn {
     padding: 1em;
     font-size: 1.25rem;
 }
-.upcoming-blog ul li:visited {
+.upcoming-blog ul li a:visited {
     background-color: red;
-    color: blue;
+    /* color: #fff; */
 }
-.upcoming-blog ul li:hover {
+.upcoming-blog ul li a:hover {
+    width: 100%;
     background-color: red;
-    color: blue;
+    color: #fff;
 }
 .upcoming-blog ul li .active {
     background-color: red;
@@ -137,7 +138,7 @@ a.\.btn {
     width: 100%;
 }
 article.single-blog-live img {
-    width: 312px;
+    width: 291px;
     height: 175px;
 }
 /* .upcoming-blog ul li:active,
@@ -171,6 +172,11 @@ a.transfer {
     grid-gap: 1em;
     grid-template-rows: repeat(3, 1fr);
 }
+article.single-blog-live {
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+}
 .single-blog-title h4 {
     font-size: 1.125rem;
     line-height: 27px;
@@ -185,10 +191,62 @@ a.transfer {
 .single-blog-icons p {
     margin: 1em 0;
     padding: 0 2em 0 0;
+    color: rgba(22, 22, 22, 0.7);
 }
 
 .single-blog-icons p span {
     margin-left: 3px;
+    color: rgba(22, 22, 22, 0.7);
 }
 
+/* ===================
+    footer style
+=======================*/
+
+#footer{
+    background-color: var(--bg-color);
+    padding: 2em;
+}
+footer#footer h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 60px;
+    font-family: 'Poppins';
+    text-align: center;
+    color: #fff;
+}
+.footer-links, .footer-social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.footer-links ul, .footer-social-icons ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.footer-links ul li a {
+    color: #B9B9B9;
+    font-weight: 500;
+}
+
+ .footer-social-icons ul li {
+    padding: 13px 14px;
+    background-color:#ddd;
+    border-radius: 50%;
+ }
+i.fa-social{
+    font-size: 1.5rem;
+    color: blueviolet;
+}
+hr{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 1em;
+}
 
