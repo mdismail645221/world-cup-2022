@@ -433,6 +433,11 @@ hr{
     }
     .upcoming-blog{
         width: 100%;
+        background-color: #fff;
+    } 
+    .upcoming-blog ul li{
+        text-align: center;
+        border: 1px solid #ddd;
     } 
     .blog-live-items {
         display: grid;
@@ -563,6 +568,8 @@ hr{
         padding: 0;
         display: flex;
         flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         gap: 2em;
