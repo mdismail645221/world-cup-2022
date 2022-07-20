@@ -416,6 +416,7 @@ hr{
     }
     .header-title {
         text-align: center;
+        width: 100%;
     }
     .header-title h1 {
         font-size: 22px;
