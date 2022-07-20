@@ -396,12 +396,15 @@ hr{
         grid-gap: 1em;
         grid-template-rows: repeat(9 1fr);
         margin: 2em 0;
+        justify-items: flex-end;
+        margin: 2em auto;
+        /* justify-content: flex-end; */
     }
     article.single-blog-live {
         border: 2px solid #ddd;
         padding: 10px;
         border-radius: 10px;
-        width: 100vh;
+        width: 100%;
     }
 
     /* footer */
