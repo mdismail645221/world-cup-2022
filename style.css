@@ -185,14 +185,19 @@ a.\.btn i.fa-solid.fa-angle-right.btn-angel {
 }
 .upcoming-blog ul li a:visited {
     background-color: red;
-    /* color: #fff; */
+    color: blue;
 }
 .upcoming-blog ul li a:hover {
     width: 100%;
     background-color: red;
     color: #fff;
 }
-.upcoming-blog ul li .active {
+.upcoming-blog ul li a:active {
+    background-color: red;
+    color: #fff;
+    width: 100%;
+}
+.upcoming-blog ul li a:focus {
     background-color: red;
     color: #fff;
     width: 100%;
