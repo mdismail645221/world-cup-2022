@@ -298,8 +298,11 @@ article.single-blog-live {
     justify-content: center;
     align-items: center;
     margin: 4em;
+    display: none;
 }
-
+/* .view-all-btn a.\.btn {
+    display: none;
+} */
 /* ===================
     footer style
 =======================*/
@@ -536,6 +539,14 @@ hr{
         border-radius: 10px;
         width: 322px;
         /* grid-row: -1/ 1; */
+    }
+    .view-all-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4em;
+        display: block;
+        display: flex;
     }
 
     /* footer */
