@@ -44,7 +44,71 @@ a.\.btn {
     padding: .7em 2em;
     border-radius: 7px;
     border: 1px solid var(--btn-color);
+    position: relative;
+    z-index: 1;
+    /* position: ; */
 }
+a.\.btn:after {
+    content: '';
+    position: absolute;
+    background: blue;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: 5ms;
+    border-radius: 9px;
+    border: -11px solid blue;
+}a.\.btn:hover::after {
+    content: '';
+    position: absolute;
+    background: blue;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 3s;
+    border-radius: 9px;
+    border: -11px solid blue;
+    z-index: -1;
+}
+a.\.btn:hover a.\.btn:after {
+    width: 100%;
+}
+
+
+a.\.btn:hover i.fa-solid.fa-angle-right.btn-angel {
+    transition: 2s;
+    /* animation: btnAngel 3s linear 1s infinite left forwards running; */
+    animation-name: angelBtn;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: initial;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    transition: 3s;
+}
+@keyframes angelBtn {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 /* ================
     header-area
 ======================*/
