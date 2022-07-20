@@ -113,6 +113,7 @@ a.\.btn i.fa-solid.fa-angle-right.btn-angel {
     justify-content: center;
     align-items: center;
     gap: 5%;
+    padding: 0 4em;
 }
 
 .header-title {
@@ -125,12 +126,12 @@ a.\.btn i.fa-solid.fa-angle-right.btn-angel {
 .header-logo {
     flex-basis: 40%;
 }
-.header-logo img {
+ .header-logo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: left;
-}
+} 
 .header-top-area {
     background: var(--bg-color);
     color: #fff;
@@ -481,8 +482,7 @@ hr{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width:992px) {
-     /* header */
-    /* .header-top-area {
+    .header-top-area {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -491,7 +491,7 @@ hr{
     }
     .header-title {
         text-align: center;
-    } */
+    } 
     .header-title h1 {
         font-size: 2em;
         line-height: 42px;
