@@ -401,7 +401,7 @@ hr{
         border: 2px solid #ddd;
         padding: 10px;
         border-radius: 10px;
-        width: 415px;
+        width: 100vh;
     }
 
     /* footer */
