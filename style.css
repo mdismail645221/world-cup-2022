@@ -217,10 +217,10 @@ a.transfer {
  .blog-livecust-area{
    display: flex;
    justify-content: space-between;
+   margin: 5em 0;
 } 
 .upcoming-blog{
     width: 30%;
-    height: 100vh;
 }
 .blog-live-items{
     width: 68%;
@@ -301,12 +301,58 @@ footer#footer h1 {
     background-color:#ddd;
     border-radius: 50%;
  }
+ .footer-social-icons li:hover {
+    background: blueviolet;
+    color: #fff;
+}
 i.fa-social{
     font-size: 1.5rem;
-    color: blueviolet;
+    color: #fff;
+}
+ .footer-social-icons li:hover i.fa-social:hover{
+    font-size: 1.5rem;
+    color: #fff;
+    z-index: -1;
+    display: block;
 }
 hr{
     border: 1px solid rgba(255, 255, 255, 0.1);
     margin: 1em;
+}
+
+.footer-social-icons ul li {
+    position: relative;
+    z-index: 1;
+    transition: 3s;
+    cursor: pointer;
+}
+
+.footer-social-icons ul li:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    background: blue;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: -1;
+    transition: 3s;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}
+.footer-social-icons ul li:hover:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    background: blue;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: -1;
+    border-radius: 50%;
+    color: #fff;
+    opacity: 0;
+    cursor: pointer;
 }
 
